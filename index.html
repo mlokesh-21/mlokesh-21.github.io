@@ -1,0 +1,1916 @@
+<!-- ========================= -->
+<!-- WORLD-CLASS ELITE PORTFOLIO FOR MOLAKA LOKESH -->
+<!-- WITH INTERACTIVE PROJECT DETAILS PANEL -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molaka Lokesh | Product Engineer | Java Full Stack Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0a0e27 0%,#1a1f3a 25%,#141829 50%,#1a1f3a 75%,#0a0e27 100%);
+background-attachment:fixed;
+color:#e2e8f0;
+overflow-x:hidden;
+min-height:100vh;
+position:relative;
+}
+
+body::before{
+content:'';
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 10% 20%,rgba(56,189,248,0.15) 0%,transparent 50%),
+radial-gradient(circle at 90% 80%,rgba(139,92,246,0.15) 0%,transparent 50%),
+radial-gradient(circle at 50% 50%,rgba(34,197,94,0.05) 0%,transparent 70%);
+pointer-events:none;
+z-index:-1;
+animation:gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift{
+0%,100%{opacity:1}
+50%{opacity:1.2}
+}
+
+body::after{
+content:'';
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(2px 2px at 20px 30px,rgba(56,189,248,0.5),rgba(56,189,248,0)),
+radial-gradient(2px 2px at 60px 70px,rgba(139,92,246,0.5),rgba(139,92,246,0)),
+radial-gradient(1px 1px at 50px 50px,rgba(34,197,94,0.5),rgba(34,197,94,0));
+background-size:500px 500px;
+pointer-events:none;
+z-index:-1;
+animation:animateParticles 20s linear infinite;
+}
+
+@keyframes animateParticles{
+0%{transform:translate(0,0)}
+100%{transform:translate(50px,50px)}
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(10,14,39,0.85);
+backdrop-filter:blur(20px);
+z-index:1000;
+border-bottom:2px solid rgba(56,189,248,0.3);
+box-shadow:0 20px 50px rgba(0,0,0,0.5);
+transition:all 0.4s ease;
+}
+
+nav:hover{
+border-bottom-color:rgba(56,189,248,0.6);
+}
+
+nav h2{
+color:#38bdf8;
+font-weight:700;
+font-size:26px;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+text-shadow:0 0 30px rgba(56,189,248,0.3);
+}
+
+nav div{display:flex;gap:15px}
+
+nav div a{
+padding:10px 18px;
+color:#cbd5e1;
+text-decoration:none;
+font-weight:500;
+font-size:14px;
+border-radius:10px;
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+position:relative;
+}
+
+nav div a::before{
+content:'';
+position:absolute;
+inset:0;
+border-radius:10px;
+background:linear-gradient(135deg,rgba(56,189,248,0.3),rgba(139,92,246,0.3));
+opacity:0;
+transition:opacity 0.4s ease;
+z-index:-1;
+}
+
+nav div a::after{
+content:'';
+position:absolute;
+bottom:0;
+left:0;
+width:0;
+height:2px;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+transition:width 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+nav div a:hover{
+color:#38bdf8;
+}
+
+nav div a:hover::before{opacity:1}
+nav div a:hover::after{width:100%}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px;
+gap:100px;
+margin-top:60px;
+position:relative;
+z-index:1;
+animation:heroSlideIn 0.8s ease-out;
+}
+
+@keyframes heroSlideIn{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.profile-img{
+width:300px;
+height:300px;
+border-radius:50%;
+border:4px solid #38bdf8;
+box-shadow:0 0 80px rgba(56,189,248,0.8),
+          0 0 120px rgba(139,92,246,0.5),
+          inset 0 0 40px rgba(56,189,248,0.2);
+object-fit:cover;
+animation:float 4s cubic-bezier(0.4,0,0.6,1) infinite,glow 3s ease-in-out infinite;
+position:relative;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0px)}
+50%{transform:translateY(-30px)}
+}
+
+@keyframes glow{
+0%,100%{box-shadow:0 0 80px rgba(56,189,248,0.8),0 0 120px rgba(139,92,246,0.5),inset 0 0 40px rgba(56,189,248,0.2)}
+50%{box-shadow:0 0 100px rgba(56,189,248,1),0 0 150px rgba(139,92,246,0.7),inset 0 0 50px rgba(56,189,248,0.3)}
+}
+
+.premium-badge{
+display:inline-block;
+background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(56,189,248,0.2));
+border:1px solid rgba(139,92,246,0.5);
+color:#cbd5e1;
+padding:10px 20px;
+border-radius:25px;
+font-size:13px;
+font-weight:600;
+margin-bottom:20px;
+animation:badgeSlideIn 0.8s ease-out both;
+backdrop-filter:blur(10px);
+letter-spacing:0.5px;
+}
+
+.premium-badge i{
+color:#38bdf8;
+margin-right:8px;
+}
+
+@keyframes badgeSlideIn{
+from{opacity:0;transform:translateY(-20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.hero-text h1{
+font-size:72px;
+font-weight:700;
+line-height:1.1;
+letter-spacing:-2px;
+animation:textSlideIn 0.8s ease-out 0.1s both;
+text-shadow:0 10px 30px rgba(56,189,248,0.3);
+}
+
+@keyframes textSlideIn{
+from{opacity:0;transform:translateX(-50px)}
+to{opacity:1;transform:translateX(0)}
+}
+
+.hero-text h1 span{
+background:linear-gradient(135deg,#38bdf8,#8b5cf6,#34d399);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+background-size:200% 200%;
+animation:gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.hero-text h3{
+margin-top:16px;
+font-weight:400;
+font-size:22px;
+color:#cbd5e1;
+animation:textSlideIn 0.8s ease-out 0.2s both;
+}
+
+.hero-text p{
+margin-top:28px;
+max-width:550px;
+color:#94a3b8;
+line-height:1.9;
+font-size:16px;
+animation:textSlideIn 0.8s ease-out 0.3s both;
+}
+
+.hero-buttons{margin-top:50px;display:flex;gap:25px;animation:textSlideIn 0.8s ease-out 0.4s both}
+
+.btn{
+padding:16px 40px;
+border-radius:14px;
+text-decoration:none;
+font-weight:600;
+display:inline-flex;
+align-items:center;
+gap:12px;
+font-size:15px;
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+cursor:pointer;
+border:2px solid transparent;
+position:relative;
+overflow:hidden;
+}
+
+.btn::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(255,255,255,0.3),rgba(255,255,255,0));
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.btn-primary{
+background:linear-gradient(135deg,#38bdf8,#06b6d4,#0ea5e9);
+color:white;
+box-shadow:0 15px 40px rgba(56,189,248,0.4);
+position:relative;
+}
+
+.btn-primary:hover{
+transform:translateY(-6px) scale(1.05);
+box-shadow:0 25px 60px rgba(56,189,248,0.6);
+}
+
+.btn-primary:hover::before{opacity:1}
+
+.btn-secondary{
+border:2px solid #38bdf8;
+color:#38bdf8;
+background:rgba(56,189,248,0.05);
+}
+
+.btn-secondary:hover{
+background:rgba(56,189,248,0.15);
+border-color:#06b6d4;
+color:#06b6d4;
+box-shadow:0 15px 40px rgba(56,189,248,0.3);
+transform:translateY(-6px) scale(1.05);
+}
+
+.section{
+padding:120px 60px;
+max-width:1200px;
+margin:auto;
+position:relative;
+z-index:1;
+}
+
+.section h2{
+color:#f1f5f9;
+margin-bottom:60px;
+font-size:48px;
+font-weight:700;
+position:relative;
+display:inline-block;
+text-shadow:0 10px 30px rgba(56,189,248,0.2);
+}
+
+.section h2::after{
+content:'';
+position:absolute;
+bottom:-16px;
+left:0;
+width:80px;
+height:6px;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+border-radius:3px;
+box-shadow:0 5px 20px rgba(56,189,248,0.4);
+}
+
+.card{
+background:linear-gradient(135deg,rgba(15,23,42,0.9) 0%,rgba(30,41,59,0.7) 100%);
+padding:40px;
+border-radius:20px;
+border:1px solid rgba(56,189,248,0.3);
+margin-bottom:28px;
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+backdrop-filter:blur(10px);
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(56,189,248,0.1),transparent);
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:#38bdf8;
+box-shadow:0 25px 60px rgba(56,189,248,0.3),0 0 40px rgba(139,92,246,0.2);
+background:linear-gradient(135deg,rgba(15,23,42,1) 0%,rgba(30,41,59,0.9) 100%);
+}
+
+.card:hover::before{opacity:1}
+
+.card h3{
+color:#f1f5f9;
+margin-bottom:14px;
+font-size:20px;
+}
+
+.card p,.card ul{
+color:#cbd5e1;
+line-height:1.9;
+font-size:15px;
+}
+
+.card i{color:#38bdf8;margin-right:8px}
+
+.card li{margin-left:20px;margin-bottom:8px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+}
+
+.timeline{border-left:3px solid;border-image:linear-gradient(180deg,#38bdf8,#8b5cf6) 1;padding-left:30px}
+
+.timeline-item{margin-bottom:40px}
+
+.timeline-item h3{
+color:#38bdf8;
+font-size:18px;
+margin-bottom:4px;
+}
+
+.timeline-item span{
+color:#94a3b8;
+font-size:13px;
+font-weight:500;
+}
+
+/* CAREER TIMELINE */
+.career-timeline{
+position:relative;
+margin:40px 0;
+}
+
+.career-timeline::before{
+content:'';
+position:absolute;
+left:24px;
+top:0;
+bottom:0;
+width:3px;
+background:linear-gradient(180deg,#38bdf8,#8b5cf6,#34d399,#8b5cf6);
+box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+.timeline-node{
+position:relative;
+margin-bottom:60px;
+padding-left:100px;
+animation:slideInLeft 0.8s ease-out both;
+}
+
+@keyframes slideInLeft{
+from{opacity:0;transform:translateX(-50px)}
+to{opacity:1;transform:translateX(0)}
+}
+
+.timeline-node:nth-child(2){animation-delay:0.2s}
+.timeline-node:nth-child(3){animation-delay:0.4s}
+
+.timeline-dot{
+position:absolute;
+left:0;
+top:5px;
+width:54px;
+height:54px;
+border-radius:50%;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+border:4px solid #0a0e27;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:2;
+box-shadow:0 0 30px rgba(56,189,248,0.7),0 0 50px rgba(139,92,246,0.4);
+animation:dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse{
+0%,100%{box-shadow:0 0 30px rgba(56,189,248,0.7),0 0 50px rgba(139,92,246,0.4)}
+50%{box-shadow:0 0 50px rgba(56,189,248,1),0 0 80px rgba(139,92,246,0.6)}
+}
+
+.timeline-dot::after{
+content:'';
+position:absolute;
+width:20px;
+height:20px;
+border-radius:50%;
+background:#0a0e27;
+}
+
+.timeline-content{
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.75) 100%);
+padding:40px;
+border-radius:16px;
+border:1px solid rgba(56,189,248,0.3);
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+backdrop-filter:blur(10px);
+position:relative;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.timeline-content::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(56,189,248,0.1),transparent);
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.timeline-content:hover{
+border-color:#38bdf8;
+box-shadow:0 30px 70px rgba(56,189,248,0.3);
+transform:translateY(-8px);
+}
+
+.timeline-content:hover::before{opacity:1}
+
+.timeline-year{
+display:inline-block;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+color:white;
+padding:8px 16px;
+border-radius:20px;
+font-size:12px;
+font-weight:700;
+margin-bottom:14px;
+box-shadow:0 5px 15px rgba(56,189,248,0.4);
+}
+
+.timeline-content h3{
+color:#f1f5f9;
+font-size:22px;
+margin-bottom:6px;
+margin-top:10px;
+}
+
+.timeline-content h3 i{
+color:#38bdf8;
+margin-right:10px;
+}
+
+.timeline-content p{
+color:#cbd5e1;
+font-size:15px;
+margin:10px 0;
+}
+
+.experience-list{
+list-style:none;
+margin-top:14px;
+margin-bottom:14px;
+}
+
+.experience-list li{
+color:#cbd5e1;
+font-size:14px;
+margin-bottom:10px;
+padding-left:24px;
+position:relative;
+line-height:1.6;
+}
+
+.experience-list li::before{
+content:'▸';
+position:absolute;
+left:0;
+color:#38bdf8;
+font-weight:bold;
+}
+
+.duration-badge{
+display:inline-block;
+background:linear-gradient(135deg,rgba(56,189,248,0.15),rgba(139,92,246,0.1));
+color:#38bdf8;
+padding:8px 16px;
+border-radius:10px;
+font-size:12px;
+font-weight:700;
+margin-top:16px;
+border:1px solid rgba(56,189,248,0.4);
+box-shadow:0 5px 15px rgba(56,189,248,0.2);
+}
+
+/* PROJECT PANEL */
+.projects-container{
+display:grid;
+grid-template-columns:1fr 1.5fr;
+gap:50px;
+}
+
+.project-list .card{
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:14px;
+font-weight:500;
+}
+
+.project-list .card i{
+font-size:26px;
+color:#38bdf8;
+}
+
+.project-details{
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.8) 100%);
+padding:50px;
+border-radius:20px;
+border:1px solid rgba(56,189,248,0.3);
+min-height:450px;
+backdrop-filter:blur(10px);
+box-shadow:0 30px 80px rgba(0,0,0,0.4);
+position:relative;
+}
+
+.project-details h2{
+color:#f1f5f9;
+font-size:32px;
+margin-bottom:24px;
+}
+
+.project-details h3{
+color:#38bdf8;
+margin-top:28px;
+margin-bottom:14px;
+font-size:17px;
+}
+
+.project-details ul{list-style-position:inside}
+
+.project-details li{
+color:#cbd5e1;
+margin-bottom:12px;
+}
+
+.tech-icons{
+display:flex;
+flex-wrap:wrap;
+gap:16px;
+margin-top:16px;
+}
+
+.tech-icons i{
+font-size:28px;
+color:#38bdf8;
+transition:all 0.4s ease;
+cursor:default;
+}
+
+.tech-icons i:hover{
+transform:scale(1.3) rotate(10deg);
+color:#8b5cf6;
+filter:drop-shadow(0 0 10px rgba(56,189,248,0.6));
+}
+
+@media(max-width:768px){
+.projects-container{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:40px 25px;
+gap:40px;
+flex-direction:column;
+}
+
+.hero-text h1{font-size:48px}
+
+nav{padding:16px 25px}
+
+.section{padding:60px 25px}
+}
+
+/* STATS SECTION */
+.stats-section{
+background:linear-gradient(135deg,rgba(56,189,248,0.1) 0%,rgba(139,92,246,0.1) 100%);
+padding:80px 60px;
+margin:40px 60px;
+border-radius:24px;
+border:1px solid rgba(56,189,248,0.3);
+backdrop-filter:blur(15px);
+box-shadow:0 20px 60px rgba(56,189,248,0.2);
+position:relative;
+z-index:1;
+}
+
+.stats-section::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(52,209,153,0.05),transparent);
+border-radius:24px;
+pointer-events:none;
+}
+
+.stats-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.stat-card{
+text-align:center;
+padding:30px;
+background:linear-gradient(135deg,rgba(15,23,42,0.8),rgba(30,41,59,0.6));
+border-radius:16px;
+border:1px solid rgba(56,189,248,0.3);
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+cursor:pointer;
+animation:statFadeIn 0.8s ease-out both;
+}
+
+@keyframes statFadeIn{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.stat-card:nth-child(1){animation-delay:0.1s}
+.stat-card:nth-child(2){animation-delay:0.2s}
+.stat-card:nth-child(3){animation-delay:0.3s}
+.stat-card:nth-child(4){animation-delay:0.4s}
+
+.stat-card:hover{
+transform:translateY(-10px) scale(1.05);
+border-color:#38bdf8;
+box-shadow:0 20px 50px rgba(56,189,248,0.3);
+background:linear-gradient(135deg,rgba(15,23,42,1),rgba(30,41,59,0.8));
+}
+
+.stat-number{
+font-size:48px;
+font-weight:700;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+margin-bottom:12px;
+animation:numberCount 2s ease-out;
+}
+
+@keyframes numberCount{
+from{opacity:0;transform:scale(0.5)}
+to{opacity:1;transform:scale(1)}
+}
+
+.stat-label{
+font-size:14px;
+font-weight:600;
+color:#cbd5e1;
+letter-spacing:0.5px;
+text-transform:uppercase;
+}
+
+/* ACHIEVEMENTS */
+.achievement-card{
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.7) 100%);
+padding:40px;
+border-radius:16px;
+border:1px solid rgba(56,189,248,0.2);
+text-align:center;
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+position:relative;
+overflow:hidden;
+}
+
+.achievement-card::before{
+content:'';
+position:absolute;
+inset:0;
+background:radial-gradient(circle at 50% 0%,rgba(56,189,248,0.3),transparent 70%);
+opacity:0;
+transition:opacity 0.4s ease;
+pointer-events:none;
+}
+
+.achievement-card:hover{
+border-color:#38bdf8;
+box-shadow:0 25px 60px rgba(56,189,248,0.35),0 0 40px rgba(139,92,246,0.2);
+transform:translateY(-15px);
+background:linear-gradient(135deg,rgba(15,23,42,1) 0%,rgba(30,41,59,0.9) 100%);
+}
+
+.achievement-card:hover::before{opacity:1}
+
+.achievement-icon{
+font-size:48px;
+color:#38bdf8;
+margin-bottom:20px;
+transition:all 0.4s ease;
+}
+
+.achievement-card:hover .achievement-icon{
+transform:scale(1.2) rotate(5deg);
+filter:drop-shadow(0 0 15px rgba(56,189,248,0.5));
+}
+
+.achievement-card h3{
+color:#f1f5f9;
+font-size:20px;
+margin-bottom:12px;
+font-weight:700;
+}
+
+.achievement-card p{
+color:#cbd5e1;
+font-size:14px;
+line-height:1.7;
+}
+
+/* EXPERTISE HIGHLIGHTS */
+.expertise-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.expertise-item{
+animation:expertiseSlideIn 0.8s ease-out both;
+}
+
+@keyframes expertiseSlideIn{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.expertise-item:nth-child(1){animation-delay:0.1s}
+.expertise-item:nth-child(2){animation-delay:0.2s}
+.expertise-item:nth-child(3){animation-delay:0.3s}
+.expertise-item:nth-child(4){animation-delay:0.4s}
+.expertise-item:nth-child(5){animation-delay:0.5s}
+.expertise-item:nth-child(6){animation-delay:0.6s}
+
+.expertise-label{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+font-weight:600;
+}
+
+.expertise-label span:first-child{
+color:#f1f5f9;
+font-size:14px;
+}
+
+.expertise-level{
+background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(139,92,246,0.2));
+color:#38bdf8;
+padding:4px 12px;
+border-radius:12px;
+font-size:11px;
+font-weight:700;
+border:1px solid rgba(56,189,248,0.3);
+text-transform:uppercase;
+letter-spacing:0.5px;
+}
+
+.expertise-bar{
+height:8px;
+background:rgba(56,189,248,0.1);
+border-radius:10px;
+overflow:hidden;
+border:1px solid rgba(56,189,248,0.2);
+}
+
+.expertise-fill{
+height:100%;
+background:linear-gradient(90deg,#38bdf8,#8b5cf6,#34d399);
+border-radius:10px;
+animation:fillBar 2s ease-out;
+box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+@keyframes fillBar{
+from{width:0!important}
+to{width:inherit}
+}
+
+/* CERTIFICATIONS */
+.certifications-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.cert-card{
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.75) 100%);
+border:1px solid rgba(56,189,248,0.3);
+border-radius:16px;
+padding:32px;
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+position:relative;
+overflow:hidden;
+animation:certSlideIn 0.8s ease-out both;
+}
+
+@keyframes certSlideIn{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.cert-card:nth-child(1){animation-delay:0.1s}
+.cert-card:nth-child(2){animation-delay:0.2s}
+.cert-card:nth-child(3){animation-delay:0.3s}
+.cert-card:nth-child(4){animation-delay:0.4s}
+
+.cert-card::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:3px;
+background:linear-gradient(90deg,#38bdf8,#8b5cf6,#34d399);
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.cert-card:hover::before{opacity:1}
+
+.cert-card:hover{
+transform:translateY(-10px);
+border-color:#38bdf8;
+box-shadow:0 25px 60px rgba(56,189,248,0.3),0 0 40px rgba(139,92,246,0.2);
+background:linear-gradient(135deg,rgba(15,23,42,1) 0%,rgba(30,41,59,0.9) 100%);
+}
+
+.cert-header{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+margin-bottom:20px;
+}
+
+.cert-icon{
+font-size:40px;
+color:#38bdf8;
+transition:all 0.4s ease;
+}
+
+.cert-card:hover .cert-icon{
+transform:scale(1.15) rotate(-5deg);
+filter:drop-shadow(0 0 15px rgba(56,189,248,0.5));
+}
+
+.cert-badge{
+background:linear-gradient(135deg,#34d399,#10b981);
+color:white;
+padding:6px 14px;
+border-radius:20px;
+font-size:11px;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:0.5px;
+box-shadow:0 5px 15px rgba(52,211,153,0.3);
+}
+
+.cert-card h3{
+color:#f1f5f9;
+font-size:16px;
+font-weight:700;
+margin-bottom:10px;
+line-height:1.4;
+}
+
+.cert-code{
+color:#38bdf8;
+font-size:12px;
+font-weight:600;
+font-family:'Courier New',monospace;
+margin:8px 0;
+letter-spacing:0.3px;
+}
+
+.cert-issuer{
+color:#94a3b8;
+font-size:12px;
+margin-bottom:12px;
+}
+
+.cert-dates{
+display:flex;
+gap:15px;
+margin:15px 0;
+flex-wrap:wrap;
+}
+
+.cert-dates span{
+color:#cbd5e1;
+font-size:12px;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.cert-dates i{
+color:#38bdf8;
+}
+
+.cert-tags{
+display:flex;
+gap:8px;
+margin-top:16px;
+flex-wrap:wrap;
+}
+
+.tag{
+background:rgba(56,189,248,0.15);
+color:#38bdf8;
+padding:6px 12px;
+border-radius:12px;
+font-size:11px;
+font-weight:600;
+border:1px solid rgba(56,189,248,0.3);
+transition:all 0.3s ease;
+}
+
+.cert-card:hover .tag{
+background:rgba(56,189,248,0.25);
+border-color:#38bdf8;
+}
+
+/* IMPACT METRICS */
+.metrics-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+.metric-item{
+text-align:center;
+padding:35px;
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.75) 100%);
+border-radius:16px;
+border:1px solid rgba(56,189,248,0.3);
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+position:relative;
+overflow:hidden;
+}
+
+.metric-item::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(56,189,248,0.1),transparent);
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.metric-item:hover{
+transform:translateY(-12px) scale(1.05);
+border-color:#38bdf8;
+box-shadow:0 25px 60px rgba(56,189,248,0.3);
+background:linear-gradient(135deg,rgba(15,23,42,1) 0%,rgba(30,41,59,0.9) 100%);
+}
+
+.metric-item:hover::before{opacity:1}
+
+.metric-icon{
+font-size:42px;
+color:#38bdf8;
+margin-bottom:16px;
+transition:all 0.4s ease;
+}
+
+.metric-item:hover .metric-icon{
+transform:scale(1.2) rotate(10deg);
+filter:drop-shadow(0 0 15px rgba(56,189,248,0.5));
+}
+
+.metric-value{
+font-size:48px;
+font-weight:700;
+background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+margin-bottom:8px;
+}
+
+.metric-label{
+color:#f1f5f9;
+font-size:14px;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:0.5px;
+margin-bottom:10px;
+}
+
+.metric-item p{
+color:#cbd5e1;
+font-size:13px;
+line-height:1.6;
+margin-top:8px;
+}
+
+/* INDUSTRY EXPERTISE */
+.industry-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.industry-card{
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.75) 100%);
+padding:35px;
+border-radius:16px;
+border:1px solid rgba(56,189,248,0.2);
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+position:relative;
+overflow:hidden;
+text-align:center;
+}
+
+.industry-card::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(56,189,248,0.1),rgba(139,92,246,0.05));
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.industry-card:hover{
+transform:translateY(-12px);
+border-color:#38bdf8;
+box-shadow:0 25px 60px rgba(56,189,248,0.3);
+background:linear-gradient(135deg,rgba(15,23,42,1) 0%,rgba(30,41,59,0.9) 100%);
+}
+
+.industry-card:hover::before{opacity:1}
+
+.industry-icon{
+font-size:44px;
+color:#38bdf8;
+margin-bottom:16px;
+transition:all 0.4s ease;
+display:inline-block;
+}
+
+.industry-card:hover .industry-icon{
+transform:scale(1.25) rotate(-8deg);
+filter:drop-shadow(0 0 15px rgba(56,189,248,0.5));
+}
+
+.industry-card h3{
+color:#f1f5f9;
+font-size:18px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.industry-card p:first-of-type{
+color:#38bdf8;
+font-size:13px;
+font-weight:600;
+margin-bottom:12px;
+}
+
+.industry-card p:last-child{
+color:#cbd5e1;
+font-size:13px;
+line-height:1.6;
+}
+
+/* TECHNICAL LEADERSHIP */
+.leadership-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.leadership-card{
+background:linear-gradient(135deg,rgba(15,23,42,0.95) 0%,rgba(30,41,59,0.75) 100%);
+padding:35px;
+border-radius:16px;
+border:1px solid rgba(56,189,248,0.2);
+transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+position:relative;
+overflow:hidden;
+}
+
+.leadership-card::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,rgba(139,92,246,0.1),transparent);
+opacity:0;
+transition:opacity 0.4s ease;
+}
+
+.leadership-card:hover{
+transform:translateY(-12px);
+border-color:#8b5cf6;
+box-shadow:0 25px 60px rgba(139,92,246,0.25);
+background:linear-gradient(135deg,rgba(15,23,42,1) 0%,rgba(30,41,59,0.9) 100%);
+}
+
+.leadership-card:hover::before{opacity:1}
+
+.leadership-header{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:20px;
+}
+
+.leadership-header i{
+font-size:32px;
+color:#8b5cf6;
+transition:all 0.4s ease;
+}
+
+.leadership-card:hover .leadership-header i{
+transform:scale(1.2);
+filter:drop-shadow(0 0 15px rgba(139,92,246,0.5));
+}
+
+.leadership-header h3{
+color:#f1f5f9;
+font-size:16px;
+font-weight:700;
+}
+
+.leadership-list{
+list-style:none;
+}
+
+.leadership-list li{
+color:#cbd5e1;
+font-size:13px;
+line-height:1.7;
+margin-bottom:12px;
+padding-left:24px;
+position:relative;
+}
+
+.leadership-list li::before{
+content:'✓';
+position:absolute;
+left:0;
+color:#38bdf8;
+font-weight:bold;
+font-size:16px;
+}
+
+footer{
+text-align:center;
+padding:60px 60px;
+color:#64748b;
+border-top:2px solid rgba(56,189,248,0.2);
+font-size:14px;
+position:relative;
+z-index:1;
+backdrop-filter:blur(10px);
+}
+
+.fade{opacity:0;transform:translateY(50px);transition:1s cubic-bezier(0.25,0.46,0.45,0.94)}
+.fade.show{opacity:1;transform:translateY(0)}
+
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Molaka Lokesh</h2>
+<div>
+<a href="#summary">Summary</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<img src="profile.png" class="profile-img">
+<div class="hero-text">
+<div class="premium-badge">
+<i class="fas fa-star"></i> Senior Java Full Stack Engineer
+</div>
+<h1>Molaka <span>Lokesh</span></h1>
+<h3>Product Engineer | Enterprise SaaS Architect</h3>
+<p>
+Transforming enterprise challenges into scalable solutions. 4+ years delivering production-grade applications for 10+ clients. Specialized in architecting high-performance systems with modern tech stacks.
+</p>
+<div class="hero-buttons">
+<a href="https://www.linkedin.com/in/lokeshmolaka/" target="_blank" class="btn btn-primary">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+<a href="https://rite.digital/products/" target="_blank" class="btn btn-secondary">
+<i class="fas fa-globe"></i> Rite Products
+</a>
+</div>
+</div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats-section">
+<div class="stats-container">
+<div class="stat-card">
+<div class="stat-number">4+</div>
+<div class="stat-label">Years Experience</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">7+</div>
+<div class="stat-label">Enterprise Solutions</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">10+</div>
+<div class="stat-label">Global Clients</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">30%</div>
+<div class="stat-label">Performance Boost</div>
+</div>
+</div>
+</section>
+
+<!-- IMPACT METRICS -->
+<section class="section fade">
+<h2>Business Impact & Results</h2>
+<div class="metrics-grid">
+<div class="metric-item">
+<div class="metric-icon"><i class="fas fa-bolt"></i></div>
+<div class="metric-value">30%</div>
+<div class="metric-label">Load Time Reduction</div>
+<p>Optimized critical application modules for enterprise clients</p>
+</div>
+<div class="metric-item">
+<div class="metric-icon"><i class="fas fa-users"></i></div>
+<div class="metric-value">10+</div>
+<div class="metric-label">Global Enterprise Clients</div>
+<p>Delivered solutions for 10+ companies</p>
+</div>
+<div class="metric-item">
+<div class="metric-icon"><i class="fas fa-code-branch"></i></div>
+<div class="metric-value">7+</div>
+<div class="metric-label">Production Applications</div>
+<p>Built and deployed enterprise-grade solutions</p>
+</div>
+<div class="metric-item">
+<div class="metric-icon"><i class="fas fa-chart-line"></i></div>
+<div class="metric-value">20%</div>
+<div class="metric-label">Onboarding Improvement</div>
+<p>Reduced client setup time through standardized practices</p>
+</div>
+</div>
+</section>
+
+<!-- SUMMARY -->
+<section id="summary" class="section fade">
+<h2>Professional Summary</h2>
+<div class="card">
+<ul style="margin-left:20px;">
+<li>Java Full Stack Developer with 4+ years of experience designing, developing, and maintaining enterprise applications</li>
+<li>Proficient in modern technologies: HTML5, CSS3, JavaScript, React, Angular, Oracle JET, VBCS, and Spring Boot</li>
+<li>Expert in REST API development, SQL/PL-SQL database integration, and Agile-based SDLC</li>
+<li>Specialized in responsive UI implementation, third-party service integration, and application performance optimization</li>
+<li>Delivered production-ready solutions for 10+ global clients including Humana, Hexaware, CSC Global, and Trinamix</li>
+</ul>
+</div>
+</section>
+
+<!-- TECHNICAL LEADERSHIP -->
+<section class="section fade">
+<h2>Technical Leadership & Expertise</h2>
+<div class="leadership-grid">
+<div class="leadership-card">
+<div class="leadership-header">
+<i class="fas fa-graduation-cap"></i>
+<h3>Mentoring & Knowledge Sharing</h3>
+</div>
+<ul class="leadership-list">
+<li>Established standardized coding practices and patterns</li>
+<li>Created comprehensive technical documentation for teams</li>
+<li>Guided junior developers through enterprise projects</li>
+<li>Conducted code reviews ensuring quality standards</li>
+</ul>
+</div>
+<div class="leadership-card">
+<div class="leadership-header">
+<i class="fas fa-sitemap"></i>
+<h3>Architecture & Design</h3>
+</div>
+<ul class="leadership-list">
+<li>Designed scalable microservices architectures</li>
+<li>Implemented design patterns (MVC, Repository, etc.)</li>
+<li>Optimized database schemas for enterprise scale</li>
+<li>Led API design and integration strategies</li>
+</ul>
+</div>
+<div class="leadership-card">
+<div class="leadership-header">
+<i class="fas fa-rocket"></i>
+<h3>Performance & Optimization</h3>
+</div>
+<ul class="leadership-list">
+<li>Reduced application latency by 30% through optimization</li>
+<li>Optimized query performance for large datasets</li>
+<li>Implemented caching strategies and load balancing</li>
+<li>Profiled and debugged complex enterprise applications</li>
+</ul>
+</div>
+<div class="leadership-card">
+<div class="leadership-header">
+<i class="fas fa-project-diagram"></i>
+<h3>Project Delivery</h3>
+</div>
+<ul class="leadership-list">
+<li>Led agile teams through sprint planning and execution</li>
+<li>Managed technical requirements and stakeholder communication</li>
+<li>Ensured on-time delivery of enterprise solutions</li>
+<li>Maintained code quality and testing standards</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- EXPERTISE HIGHLIGHTS -->
+<section class="section fade">
+<h2>Core Competencies</h2>
+<div class="expertise-grid">
+<div class="expertise-item">
+<div class="expertise-label">
+<span>Full Stack Development</span>
+<span class="expertise-level">Expert</span>
+</div>
+<div class="expertise-bar">
+<div class="expertise-fill" style="width:95%"></div>
+</div>
+</div>
+
+<div class="expertise-item">
+<div class="expertise-label">
+<span>Enterprise Architecture</span>
+<span class="expertise-level">Expert</span>
+</div>
+<div class="expertise-bar">
+<div class="expertise-fill" style="width:90%"></div>
+</div>
+</div>
+
+<div class="expertise-item">
+<div class="expertise-label">
+<span>Performance Optimization</span>
+<span class="expertise-level">Expert</span>
+</div>
+<div class="expertise-bar">
+<div class="expertise-fill" style="width:92%"></div>
+</div>
+</div>
+
+<div class="expertise-item">
+<div class="expertise-label">
+<span>Technical Leadership</span>
+<span class="expertise-level">Expert</span>
+</div>
+<div class="expertise-bar">
+<div class="expertise-fill" style="width:88%"></div>
+</div>
+</div>
+
+<div class="expertise-item">
+<div class="expertise-label">
+<span>Team Mentoring</span>
+<span class="expertise-level">Proficient</span>
+</div>
+<div class="expertise-bar">
+<div class="expertise-fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="expertise-item">
+<div class="expertise-label">
+<span>Agile Methodologies</span>
+<span class="expertise-level">Expert</span>
+</div>
+<div class="expertise-bar">
+<div class="expertise-fill" style="width:94%"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section fade">
+<h2>Career Journey</h2>
+<div class="career-timeline">
+<div class="timeline-node">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-year">2019</div>
+<h3><i class="fas fa-graduation-cap"></i> Graduation</h3>
+<p>Bachelor's Degree</p>
+</div>
+</div>
+
+<div class="timeline-node">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-year">Oct 2021 - July 2025</div>
+<h3><i class="fas fa-briefcase"></i> Product Engineer</h3>
+<p><strong>Rite Software Solutions & Services LLP</strong></p>
+<ul class="experience-list">
+<li>Delivered 7+ enterprise-grade applications for global clients including Humana, Hexaware, CSC Global, and Trinamix</li>
+<li>Built and maintained UIs using Oracle JET, VBCS, React, and Angular</li>
+<li>Designed and developed RESTful APIs using Spring Boot</li>
+<li>Led performance tuning initiatives reducing load time by up to 30%</li>
+</ul>
+<div class="duration-badge">3 years 9 months</div>
+</div>
+</div>
+
+<div class="timeline-node">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<div class="timeline-year">Aug 2025</div>
+<h3><i class="fas fa-code"></i> Software Developer</h3>
+<p><strong>Critical River Technologies Pvt Ltd</strong></p>
+<p>Building next-generation enterprise solutions with cutting-edge technologies.</p>
+<div class="duration-badge">Current</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROJECTS INTERACTIVE -->
+<section id="projects" class="section fade">
+<h2>Enterprise Products & Projects</h2>
+<div class="projects-container">
+
+<div class="project-list">
+<div class="card" onclick="showProject('convertRite')">
+<i class="fas fa-database"></i> ConvertRite
+</div>
+<div class="card" onclick="showProject('riteSync')">
+<i class="fas fa-sync"></i> RiteSync
+</div>
+<div class="card" onclick="showProject('riteCOA')">
+<i class="fas fa-project-diagram"></i> RiteCOA
+</div>
+<div class="card" onclick="showProject('auditRite')">
+<i class="fas fa-shield-alt"></i> AuditRite
+</div>
+<div class="card" onclick="showProject('processRite')">
+<i class="fas fa-cogs"></i> ProcessRite
+</div>
+</div>
+
+<div class="project-details" id="projectDetails">
+<h2><i class="fas fa-database"></i> ConvertRite</h2>
+
+<p>
+ConvertRite is a powerful enterprise-grade Oracle Cloud data migration platform designed to automate data extraction, mapping, validation, and transformation. It enables seamless migration from legacy ERP systems such as Oracle EBS, SAP, JD Edwards, and PeopleSoft to Oracle Fusion Cloud. It is used by global clients including Humana, Hexaware, CSC Global, Wood, and Trinamix.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed responsive frontend using Oracle JET, JavaScript, and KnockoutJS</li>
+<li>Built backend REST APIs using Java and Spring Boot</li>
+<li>Integrated Oracle database using SQL and PL/SQL</li>
+<li>Implemented data validation, mapping, and migration modules</li>
+<li>Optimized performance and resolved enterprise production issues</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>Java • Spring Boot • Oracle • SQL • PL/SQL • JavaScript • Oracle JET • KnockoutJS • REST APIs</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- INDUSTRY EXPERTISE -->
+<section class="section fade">
+<h2>Domain & Industry Expertise</h2>
+<div class="industry-grid">
+<div class="industry-card">
+<div class="industry-icon"><i class="fas fa-hospital"></i></div>
+<h3>Healthcare & Insurance</h3>
+<p><strong>Humana, CSC Global</strong></p>
+<p>Enterprise data migration and claims processing systems for major healthcare providers</p>
+</div>
+<div class="industry-card">
+<div class="industry-icon"><i class="fas fa-building"></i></div>
+<h3>Enterprise Software</h3>
+<p><strong>Oracle Fusion, ERP Systems</strong></p>
+<p>Complex ERP migrations, financial data transformation, and process automation</p>
+</div>
+<div class="industry-card">
+<div class="industry-icon"><i class="fas fa-chart-pie"></i></div>
+<h3>Financial Services</h3>
+<p><strong>Hexaware, Trinamix</strong></p>
+<p>Accounting data migration, compliance tools, and financial reporting platforms</p>
+</div>
+<div class="industry-card">
+<div class="industry-icon"><i class="fas fa-cogs"></i></div>
+<h3>Digital Transformation</h3>
+<p><strong>SaaS & Cloud Solutions</strong></p>
+<p>Modern tech stacks and scalable cloud platforms</p>
+</div>
+</div>
+</section>
+
+<!-- ACHIEVEMENTS & CERTIFICATIONS -->
+<section class="section fade">
+<h2>Achievements & Recognition</h2>
+<div class="grid">
+<div class="achievement-card">
+<div class="achievement-icon"><i class="fas fa-award"></i></div>
+<h3>Performance Optimization Lead</h3>
+<p>Spearheaded initiatives reducing application load time by 30% and onboarding time by 20% across enterprise products.</p>
+</div>
+<div class="achievement-card">
+<div class="achievement-icon"><i class="fas fa-rocket"></i></div>
+<h3>Enterprise Solutions Architect</h3>
+<p>Designed and deployed 7+ production-ready enterprise applications serving 10+ global clients worldwide.</p>
+</div>
+<div class="achievement-card">
+<div class="achievement-icon"><i class="fas fa-code"></i></div>
+<h3>Technical Documentation Expert</h3>
+<p>Established standardized coding practices and contributed comprehensive technical documentation for the entire team.</p>
+</div>
+<div class="achievement-card">
+<div class="achievement-icon"><i class="fas fa-star"></i></div>
+<h3>Full Stack Expertise</h3>
+<p>Mastered modern frontend and backend technologies including React, Angular, Oracle JET, and Spring Boot ecosystems.</p>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section fade">
+
+<h2>Technical Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3><i class="fab fa-java"></i> Backend & Middleware</h3>
+<p>
+Java • Spring Boot • Microservices • Enterprise Architecture
+</p>
+</div>
+
+<div class="card">
+<h3><i class="fab fa-angular"></i> Frontend Development</h3>
+<p>
+React.js • Angular • TypeScript • JavaScript • Oracle JET
+</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-database"></i> Databases</h3>
+<p>
+Oracle • MySQL • PostgreSQL • SQL • PL/SQL
+</p>
+</div>
+
+<div class="card">
+<h3><i class="fab fa-git-alt"></i> DevOps & Tools</h3>
+<p>
+Git • GitHub • VS Code • IntelliJ • JIRA • Postman
+</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-layer-group"></i> Web Technologies</h3>
+<p>
+HTML5 • CSS3 • Bootstrap • JSON • AJAX • REST APIs
+</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-cloud"></i> Cloud & Enterprise</h3>
+<p>
+Oracle Cloud • SaaS Integration • System Integration
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section fade">
+<h2>Certifications & Credentials</h2>
+<div class="certifications-grid">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon"><i class="fas fa-cloud"></i></div>
+<div class="cert-badge">Active</div>
+</div>
+<h3>Oracle Cloud Infrastructure 2025 Foundations Associate</h3>
+<p class="cert-code">Credential ID: 1Z0-1085-25</p>
+<p class="cert-issuer">Issued by Oracle</p>
+<div class="cert-dates">
+<span><i class="fas fa-calendar"></i> Feb 2026</span>
+<span><i class="fas fa-hourglass-end"></i> Feb 2028</span>
+</div>
+<div class="cert-tags">
+<span class="tag">Cloud Infrastructure</span>
+<span class="tag">OCI</span>
+</div>
+</div>
+
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon"><i class="fas fa-brain"></i></div>
+<div class="cert-badge">Active</div>
+</div>
+<h3>Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3>
+<p class="cert-code">Credential ID: 1Z0-1122-25</p>
+<p class="cert-issuer">Issued by Oracle</p>
+<div class="cert-dates">
+<span><i class="fas fa-calendar"></i> Feb 2026</span>
+<span><i class="fas fa-hourglass-end"></i> Feb 2028</span>
+</div>
+<div class="cert-tags">
+<span class="tag">AI/ML</span>
+<span class="tag">Cloud</span>
+</div>
+</div>
+
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon"><i class="fas fa-robot"></i></div>
+<div class="cert-badge">Active</div>
+</div>
+<h3>Oracle Fusion AI Agent Studio Foundations Associate</h3>
+<p class="cert-code">Credential ID: 1Z0-1145-1 • Release 1</p>
+<p class="cert-issuer">Issued by Oracle</p>
+<div class="cert-dates">
+<span><i class="fas fa-calendar"></i> Feb 2026</span>
+</div>
+<div class="cert-tags">
+<span class="tag">AI Agents</span>
+<span class="tag">Fusion</span>
+</div>
+</div>
+
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon"><i class="fas fa-database"></i></div>
+<div class="cert-badge">Active</div>
+</div>
+<h3>Oracle Data Platform 2025 Foundations Associate</h3>
+<p class="cert-code">Credential ID: 1Z0-1195-25</p>
+<p class="cert-issuer">Issued by Oracle</p>
+<div class="cert-dates">
+<span><i class="fas fa-calendar"></i> Feb 2026</span>
+<span><i class="fas fa-hourglass-end"></i> Feb 2028</span>
+</div>
+<div class="cert-tags">
+<span class="tag">Data Platform</span>
+<span class="tag">Database</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade">
+<h2>Get In Touch</h2>
+<div class="card">
+<div style="display:flex;flex-direction:column;gap:20px;font-size:16px;">
+<div>
+<i class="fas fa-envelope" style="color:#38bdf8;margin-right:12px;"></i>
+<strong>Email:</strong> mlokesh211996@gmail.com
+</div>
+<div>
+<i class="fas fa-phone" style="color:#38bdf8;margin-right:12px;"></i>
+<strong>Phone:</strong> +91 7680953144
+</div>
+<div>
+<i class="fab fa-linkedin" style="color:#38bdf8;margin-right:12px;"></i>
+<strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/lokeshmolaka/" target="_blank" style="color:#38bdf8;text-decoration:none;margin-left:8px;">linkedin.com/in/lokeshmolaka/</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Molaka Lokesh | Product Engineer
+</footer>
+
+<script>
+
+function showProject(project){
+
+const data={
+
+convertRite:`
+<h2><i class="fas fa-database"></i> ConvertRite</h2>
+
+<p>
+ConvertRite is a powerful enterprise-grade Oracle Cloud data migration platform designed to automate data extraction, mapping, validation, and transformation. It enables seamless migration from legacy ERP systems such as Oracle EBS, SAP, JD Edwards, and PeopleSoft to Oracle Fusion Cloud. It is used by global clients including Humana, Hexaware, CSC Global, Wood, and Trinamix.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed responsive frontend using Oracle JET, JavaScript, and KnockoutJS</li>
+<li>Built backend REST APIs using Java and Spring Boot</li>
+<li>Integrated Oracle database using SQL and PL/SQL</li>
+<li>Implemented data validation, mapping, and migration modules</li>
+<li>Optimized performance and resolved enterprise production issues</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>Java • Spring Boot • Oracle • SQL • PL/SQL • JavaScript • Oracle JET • KnockoutJS • REST APIs</p>
+`,
+
+riteSync:`
+<h2><i class="fas fa-sync"></i> RiteSync</h2>
+
+<p>
+RiteSync is a secure enterprise data synchronization platform used to extract, transform, and synchronize data between Oracle Fusion SaaS applications and enterprise data warehouses. It enables real-time integration, reporting, and analytics.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed frontend using React.js</li>
+<li>Built backend microservices using Java and Spring Boot</li>
+<li>Implemented secure data transfer and synchronization modules</li>
+<li>Integrated Oracle database and warehouse systems</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>React • Java • Spring Boot • SQL • REST APIs • JSON • Cloud Integration</p>
+`,
+
+riteCOA:`
+<h2><i class="fas fa-project-diagram"></i> RiteCOA</h2>
+
+<p>
+RiteCOA is a Chart of Accounts migration and transformation tool used to convert financial data structures between ERP systems. It enables automated mapping, validation, and transformation of accounting data.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed frontend using Angular and TypeScript</li>
+<li>Built backend services using Java and Spring Boot</li>
+<li>Implemented COA mapping and validation logic</li>
+<li>Integrated MySQL database</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>Angular • TypeScript • Java • Spring Boot • MySQL • REST APIs • JSON</p>
+`,
+
+auditRite:`
+<h2><i class="fas fa-shield-alt"></i> AuditRite</h2>
+
+<p>
+AuditRite is an enterprise audit and Segregation of Duties (SOD) platform used to detect security risks, role conflicts, and compliance violations in ERP systems.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed frontend using React.js</li>
+<li>Built backend services using Java and Spring Boot</li>
+<li>Implemented audit analysis and reporting modules</li>
+<li>Integrated Oracle database</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>React • Java • Spring Boot • SQL • Oracle • REST APIs • JSON</p>
+`,
+
+processRite:`
+<h2><i class="fas fa-cogs"></i> ProcessRite</h2>
+
+<p>
+ProcessRite is an enterprise ERP process analysis and automation tool used to identify inefficiencies, delays, and optimization opportunities in business workflows.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed frontend using Oracle JET</li>
+<li>Built backend services using Java and Spring Boot</li>
+<li>Implemented process analytics and automation modules</li>
+<li>Integrated Oracle database</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>Oracle JET • Java • Spring Boot • SQL • Microservices • REST APIs</p>
+`,
+
+assetManagement:`
+<h2><i class="fas fa-laptop"></i> Asset Management Tool</h2>
+
+<p>
+Enterprise internal application used to manage employee assets such as laptops, equipment, and inventory. It tracks asset allocation, lifecycle, and reporting.
+</p>
+
+<h3>My Role:</h3>
+<ul>
+<li>Developed frontend using Angular</li>
+<li>Built backend services using Spring Boot</li>
+<li>Implemented asset tracking and reporting features</li>
+<li>Integrated MySQL database</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<p>Angular • TypeScript • Java • Spring Boot • MySQL • REST APIs</p>
+`
+
+};
+
+
+document.getElementById("projectDetails").innerHTML=data[project];
+}
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add("show")}
+})})
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el))
+
+</script>
+
+</body>
+</html>
